@@ -1,4 +1,4 @@
-import {User} from "./models/userModel.js"
+import {User} from "../models/userModel.js"
 import bcrypt from "bcrypt"
 import httpStatus from "http-status"
 import crypto from "crypto"
@@ -50,7 +50,7 @@ const register=async (req,res)=>{
         return res.status(httpStatus.CREATED).json({message:"user registered"})
     }
     catch(e){
-        return res.json({message:`something went wrong`})
+        return res.json({message:`something went wrong${e}`})
     }
 }
 
