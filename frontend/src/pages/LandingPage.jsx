@@ -23,7 +23,7 @@ function LandingPage() {
           <h1> <span style={{color:"#0092CC"}}> Connect</span> with your Loved Ones</h1>
           <p>Cover a distance by ConnectX video call</p>
           <div role="button">
-            <Link to="/home" className="getStartedBtn">Get Started</Link>
+            <Link to="/auth" className="getStartedBtn">Get Started</Link>
           </div>
         </div>
         <div className="mobpng">
