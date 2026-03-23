@@ -10,7 +10,7 @@ let timeOnline={}
 export const connectToServer=(server)=>{
     const io=new Server(server,{
         cors:{
-            origing:"*",
+            origin:"*",
             methods:["GET","POST"],
             allowedHeaders:["*"],
             credentials:true
